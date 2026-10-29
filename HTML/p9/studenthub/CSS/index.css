@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Theme Toggle Button */
+.theme-toggle {
+    padding: 9px 14px;
+    border: 1px solid currentColor;
+    border-radius: 20px;
+    background: transparent;
+    color: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.theme-toggle:hover {
+    opacity: 0.8;
+}
+
+/* Light Theme - Default */
+body {
+    background-color: #ffffff;
+    color: #263238;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Theme */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+/* Header and Navigation */
+body.dark-mode header,
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .navigation-menu a {
+    color: #ffffff;
+}
+
+/* Main Sections */
+body.dark-mode .slider-section,
+body.dark-mode .features {
+    background-color: #181818;
+    color: #f1f1f1;
+}
+
+/* Feature Cards */
+body.dark-mode .feature-card {
+    background-color: #242424;
+    color: #f1f1f1;
+    border-color: #444444;
+}
+
+body.dark-mode .feature-card p {
+    color: #dddddd;
+}
+
+body.dark-mode .feature-card a {
+    color: #90caf9;
+}
+
+/* Notification Banner */
+body.dark-mode .notification-banner {
+    background-color: #292929;
+    color: #ffffff;
+}
+
+/* Slider Controls */
+body.dark-mode .slider-controls button {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #666666;
+}
+
+/* Footer */
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.notification-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 5px 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.notification-banner button {
+    background: #fff;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.notification-banner.hidden {
+    display: none;
+}
+
+header {
+    background: #1f618d;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1400px;
+    margin: auto;
+    padding: 12px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo-image {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+
+    background: #fff;
+    border-radius: 6px;
+}
+
+.logo-text {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+.navigation-menu {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    gap: 4px;
+}
+
+.navigation-menu li {
+    list-style: none;
+}
+
+.navigation-menu a {
+    display: block;
+
+    color: #fff;
+    text-decoration: none;
+
+    padding: 10px 14px;
+    border-radius: 7px;
+
+    font-size: 17px;
+}
+
+.navigation-menu a:hover {
+    background: #2574a9;
+}
+
+.theme-button {
+    background: #fff;
+    color: #1f618d;
+
+    border: none;
+
+    padding: 10px 15px;
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: #fff;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px 25px;
+}
+
+.hero {
+    min-height: 640px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../IMAGES/charusat_campus.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-overlay {
+    text-align: center;
+    color: #fff;
+    padding: 50px 30px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+
+    text-shadow: 2px 2px 5px #000;
+}
+
+.hero p {
+    font-size: 20px;
+
+    max-width: 800px;
+    margin: 0 auto 25px;
+
+    text-shadow: 1px 1px 4px #000;
+}
+
+.hero-button {
+    display: inline-block;
+
+    background: #1f618d;
+    color: #fff;
+
+    text-decoration: none;
+
+    padding: 11px 20px;
+    border-radius: 7px;
+
+    font-weight: bold;
+}
+
+.hero-button:hover{
+    background: #2574a9;
+}
+
+.slider-section,
+.page-heading,
+.content-section {
+    background: #fff;
+
+    padding: 30px;
+    border-radius: 14px;
+
+    margin-bottom: 35px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.27);
+}
+
+
+/* =========================================================
+   IMAGE SLIDER
+   ========================================================= */
+
+.slider-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.slider {
+    position: relative;
+
+    width: 100%;
+    height: 450px;
+
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.slide {
+    display: none;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.slide.active {
+    display: block;
+    animation: fade 0.5s;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.slide-overlay {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    padding: 80px 30px 35px;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    );
+
+    color: #fff;
+}
+
+.slide-content {
+    text-align: center;
+}
+
+.slide-content h3 {
+    font-size: 34px;
+}
+
+.slide-content p {
+    font-size: 18px;
+}
+
+
+/* ---------- Slider Animation ---------- */
+
+@keyframes fade {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ---------- Slider Controls ---------- */
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+
+    margin-top: 25px;
+}
+
+.slider-controls button,
+form button,
+.register-button {
+    background: #1f618d;
+    color: #fff;
+
+    border: none;
+
+    padding: 11px 22px;
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.slider-controls button:hover,
+form button:hover,
+.register-button:hover {
+    background: #2574a9;
+}
+
+
+/* =========================================================
+   FEATURES / CONTENT / STATS GRID
+   ========================================================= */
+
+.features,
+.content-grid,
+.stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+    margin-bottom: 35px;
+}
+
+.features > h2 {
+    grid-column: 1 / -1;
+
+    text-align: center;
+    font-size: 32px;
+}
+
+.feature-card,
+.content-card,
+.stat {
+    background: #fff;
+
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+    background-color: #1f618d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}                           
+
+/* ---------- Feature Cards ---------- */
+
+.feature-icon {
+    font-size: 40px;
+}
+
+.feature-card h3,
+.content-card h2,
+.content-card h3 {
+    margin: 8px 0;
+}
+
+.feature-card p {
+    color: #64748b;
+    margin-bottom: 18px;
+}
+
+.feature-card a,
+.content-card a {
+    display: inline-block;
+
+    background: #1f618d;
+    color: #fff;
+
+    text-decoration: none;
+
+    padding: 9px 16px;
+    border-radius: 6px;
+}
+
+
+.feature-card a:hover,
+.content-card a:hover{
+    background: #2574a9;
+}

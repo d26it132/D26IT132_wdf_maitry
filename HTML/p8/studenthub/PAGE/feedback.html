@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Feedback</title>
+    <link rel="stylesheet" href="../CSS/feedback.css">
+</head>
+
+<body>
+    
+<header>
+     <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="logo-link">
+                <img src="../IMAGES/charusat_logo.jpg" alt="StudentHub Logo" class="logo-image">
+                <span class="logo-text">StudentHub</span>
+            </a>
+
+            <button id="menuButton" class="hamburger" type="button" aria-expanded="false" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <ul id="navigationMenu" class="navigation-menu">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="events.html" >Events</a></li>
+                <li><a href="faq.html" >FAQ</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+                <li><a href="login.html" >Login</a></li>
+                <li><a href="register.html" >Register</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Give Your Feedback</h2>
+
+    <form>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="rating">Rating</label>
+        <select id="rating" name="rating">
+            <option value="5">Excellent</option>
+            <option value="4">Very Good</option>
+            <option value="3">Good</option>
+            <option value="2">Average</option>
+            <option value="1">Poor</option>
+        </select>
+
+        <label for="feedback">Your Feedback</label>
+        <textarea id="feedback" name="feedback" rows="6"></textarea>
+
+        <button type="submit">Submit Feedback</button>
+
+    </form>
+
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+
+<script src="../JS/feedback.js"></script>
+
+</body>
+</html>

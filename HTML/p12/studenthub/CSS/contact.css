@@ -1,0 +1,230 @@
+/* Contact Page CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Main */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    gap: 25px;
+}
+
+/* Section */
+section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    flex: 2;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+section h2 {
+    color: #1f618d;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #1f618d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #10364d;
+}
+
+/* Aside */
+aside {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    height: fit-content;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+aside h2 {
+    color: #1f618d;
+}
+
+/* Footer */
+footer {
+    background-color: #1f618d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+header {
+    background: #1f618d;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: transparent;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo-image {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+
+    background: #fff;
+    border-radius: 6px;
+}
+
+.logo-text {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+.navigation-menu {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    gap: 4px;
+}
+
+.navigation-menu li {
+    list-style: none;
+}
+
+.navigation-menu a {
+    display: block;
+
+    color: #fff;
+    text-decoration: none;
+
+    padding: 10px 14px;
+    border-radius: 7px;
+
+    font-size: 17px;
+}
+
+.navigation-menu a:hover{
+    background: #2574a9;
+}
+
+.theme-button {
+    background: #fff;
+    color: #1f618d;
+
+    border: none;
+
+    padding: 10px 15px;
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: #fff;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    left: -999px;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    background-color: #000;
+    color: white;
+    padding: 10px;
+}

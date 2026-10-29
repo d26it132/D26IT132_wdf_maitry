@@ -1,0 +1,40 @@
+
+{
+    "feedback": [
+        {
+            "id": 1,
+            "name": "Aarav Patel",
+            "rating": 5,
+            "message": "StudentHub is easy to use.",
+            "category": "Website"
+        },
+        {
+            "id": 2,
+            "name": "Diya Shah",
+            "rating": 4,
+            "message": "The event information is helpful.",
+            "category": "Events"
+        },
+        {
+            "id": 3,
+            "name": "Rohan Mehta",
+            "rating": 3,
+            "message": "Please improve the dashboard.",
+            "category": "Dashboard"
+        },
+        {
+            "id": 4,
+            "name": "Ananya Desai",
+            "rating": 5,
+            "message": "The website is well organized.",
+            "category": "Website"
+        },
+        {
+            "id": 5,
+            "name": "Krish Joshi",
+            "rating": 4,
+            "message": "Add more student resources.",
+            "category": "Resources"
+        }
+    ]
+}

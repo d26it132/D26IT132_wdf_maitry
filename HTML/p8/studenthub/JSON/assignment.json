@@ -1,0 +1,40 @@
+
+{
+    "assignments": [
+        {
+            "id": 1,
+            "title": "HTML Registration Form",
+            "subject": "Web Technology",
+            "deadline": "2026-10-28",
+            "status": "Pending"
+        },
+        {
+            "id": 2,
+            "title": "Java Inheritance",
+            "subject": "Java Programming",
+            "deadline": "2026-10-30",
+            "status": "Completed"
+        },
+        {
+            "id": 3,
+            "title": "Linked List Operations",
+            "subject": "Data Structures",
+            "deadline": "2026-11-02",
+            "status": "Pending"
+        },
+        {
+            "id": 4,
+            "title": "OSI Model",
+            "subject": "Computer Networks",
+            "deadline": "2026-11-05",
+            "status": "Pending"
+        },
+        {
+            "id": 5,
+            "title": "JavaScript Fetch API",
+            "subject": "Web Technology",
+            "deadline": "2026-11-08",
+            "status": "Completed"
+        }
+    ]
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub - Registration</title>
+
+    <link rel="stylesheet"
+          href="../css/register.css">
+
+</head>
+
+<body>
+
+<header>
+     <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="logo-link">
+                <img src="../IMAGES/charusat_logo.jpg" alt="StudentHub Logo" class="logo-image">
+                <span class="logo-text">StudentHub</span>
+            </a>
+
+            <button id="menuButton" class="hamburger" type="button" aria-expanded="false" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <ul id="navigationMenu" class="navigation-menu">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="events.html" >Events</a></li>
+                <li><a href="faq.html" >FAQ</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+                <li><a href="login.html" >Login</a></li>
+                <li><a href="register.html" >Register</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+</header>
+
+    <!-- Registration Section -->
+    <main>
+
+        <section id="registration">
+
+            <h2>Student Registration</h2>
+
+            <form
+                id="registrationForm"
+                action="../php/process_user_registration.php"
+                method="POST"
+                novalidate>
+
+                <!-- Name -->
+                <div class="form-group">
+
+                    <label for="studentName">
+                        Full Name
+                    </label>
+
+                    <input type="text"
+                           id="studentName"
+                           name="name"
+                           placeholder="Enter your full name">
+
+                    <span id="nameError"></span>
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email">
+
+                    <span id="emailError"></span>
+
+                </div>
+
+
+                <!-- Mobile -->
+                <div class="form-group">
+
+                    <label for="mobile">
+                        Mobile Number
+                    </label>
+
+                    <input type="tel"
+                           id="mobile"
+                           name="mobile"
+                           placeholder="Enter 10-digit mobile number">
+
+                    <span id="mobileError"></span>
+
+                </div>
+
+
+            <!-- Password -->
+<div class="form-group">
+
+    <label for="password">
+        Password
+    </label>
+
+    <input type="password"
+           id="password"
+           name="password"
+           placeholder="Create a password">
+
+    <span id="passwordStrength"></span>
+
+    <span id="passwordError"></span>
+
+</div>
+
+
+<!-- Confirm Password -->
+<div class="form-group">
+
+    <label for="confirmPassword">
+        Confirm Password
+    </label>
+
+    <input type="password"
+           id="confirmPassword"
+           name="confirmPassword"
+           placeholder="Re-enter your password">
+
+    <span id="confirmPasswordError"></span>
+
+</div>
+
+
+                <!-- Course -->
+                <div class="form-group">
+
+                    <label for="course">
+                        Course
+                    </label>
+
+                    <select id="course"
+                            name="course_id">
+
+                        <option value="">
+                            -- Select Course --
+                        </option>
+
+                        <option value="1">
+                            Information Technology
+                        </option>
+
+                        <option value="2">
+                            Computer Science Engineering
+                        </option>
+
+                        <option value="3">
+                            Computer Engineering
+                        </option>
+
+                    </select>
+
+                    <span id="courseError"></span>
+
+                </div>
+
+
+                <!-- Year -->
+                <div class="form-group">
+
+                    <label for="year">
+                        Year
+                    </label>
+
+                    <select id="year"
+                            name="year">
+
+                        <option value="">
+                            -- Select Year --
+                        </option>
+
+                        <option value="1">
+                            First Year
+                        </option>
+
+                        <option value="2">
+                            Second Year
+                        </option>
+
+                        <option value="3">
+                            Third Year
+                        </option>
+
+                        <option value="4">
+                            Fourth Year
+                        </option>
+
+                    </select>
+
+                    <span id="yearError"></span>
+
+                </div>
+
+
+                <!-- Gender -->
+                <fieldset>
+
+                    <legend>Gender</legend>
+
+                    <label>
+                        <input type="radio"
+                               name="gender"
+                               value="male">
+
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="gender"
+                               value="female">
+
+                        Female
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="gender"
+                               value="other">
+
+                        Other
+                    </label>
+
+                    <span id="genderError"></span>
+
+                </fieldset>
+
+
+                <!-- Terms -->
+                <div class="form-group">
+
+                    <label>
+
+                        <input type="checkbox"
+                               id="terms"
+                               name="terms">
+
+                        I agree to the Terms and Conditions
+
+                    </label>
+
+                    <span id="termsError"></span>
+
+                </div>
+
+
+                <!-- Submit -->
+                <button type="submit"
+                        id="registerSubmit">
+
+                    Register
+
+                </button>
+
+                <!-- Reset -->
+                <button type="reset"
+                        id="resetBtn">
+
+                    Reset
+
+                </button>
+
+            </form>
+            <p style="text-align: center; margin-top: 20px;">
+    <a href="../php/view_registered_user.php">
+        View Registered Students
+    </a>
+</p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 StudentHub
+        </p>
+
+    </footer>
+
+
+    <script src="../js/register.js"></script>
+
+</body>
+
+</html>

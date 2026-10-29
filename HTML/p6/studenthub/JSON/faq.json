@@ -1,0 +1,77 @@
+
+{
+    "faqs": [
+        {
+            "id": 1,
+            "question": "How can I register?",
+            "answer": "Open the Register page and fill in the required information.",
+            "category": "Account"
+        },
+        {
+            "id": 2,
+            "question": "How can I log in to StudentHub?",
+            "answer": "Open the Login page and enter your registered email address and password.",
+            "category": "Account"
+        },
+        {
+            "id": 3,
+            "question": "How can I update my profile?",
+            "answer": "Open the Profile page to view your student information.",
+            "category": "Account"
+        },
+        {
+            "id": 4,
+            "question": "What can I access from the student dashboard?",
+            "answer": "The dashboard provides an overview of pending assignments, upcoming events, and student achievements.",
+            "category": "Dashboard"
+        },
+        {
+            "id": 5,
+            "question": "How can I view upcoming college events?",
+            "answer": "Open the Events page to view upcoming technical, cultural, and sports events.",
+            "category": "Events"
+        },
+        {
+            "id": 6,
+            "question": "How can I check my pending assignments?",
+            "answer": "Visit the Assignments section to view assignment details, deadlines, and completion status.",
+            "category": "Assignments"
+        },
+        {
+            "id": 7,
+            "question": "How can I contact StudentHub support?",
+            "answer": "Visit the Contact page and submit the form with your name, email address, and message.",
+            "category": "Support"
+        },
+        {
+            "id": 8,
+            "question": "What should I do if I forget my password?",
+            "answer": "Use the password recovery option if available. Otherwise, contact the website administrator.",
+            "category": "Account"
+        },
+        {
+            "id": 9,
+            "question": "Is StudentHub accessible on mobile devices?",
+            "answer": "StudentHub supports mobile devices when its responsive layout is implemented correctly.",
+            "category": "General"
+        },
+        {
+            "id": 10,
+            "question": "Can I participate in college events?",
+            "answer": "Check the Events page for details and follow the registration instructions for each event.",
+            "category": "Events"
+        },
+        {
+            "id": 11,
+            "question": "Why is my student information not displayed?",
+            "answer": "Check your information. If the problem continues, contact the website administrator.",
+            "category": "Support"
+        },
+        {
+            "id": 12,
+            "question": "What is the purpose of StudentHub?",
+            "answer": "StudentHub provides a centralized platform for student information, academic resources, college events, and achievements.",
+            "category": "General"
+        }
+    ]
+}

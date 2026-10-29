@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub - FAQ</title>
+
+    <link rel="stylesheet" href="../CSS/faq.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html" class="logo-link">
+            <img src="../IMAGES/charusat_logo.jpg"
+                 alt="StudentHub Logo"
+                 class="logo-image">
+            <span class="logo-text">StudentHub</span>
+        </a>
+
+        <button id="menuButton" class="hamburger"
+                type="button" aria-expanded="false"
+                aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <ul id="navigationMenu" class="navigation-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="faq.html" aria-current="page">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="main-content">
+    <section class="faq-section">
+
+        <h1>Frequently Asked Questions</h1>
+        <p>Search for your question or select a category.</p>
+
+        <!-- Search box -->
+        <label for="searchFAQ">Search FAQs:</label>
+        <input
+            type="text"
+            id="searchFAQ"
+            placeholder="Type a keyword, e.g. register..."
+        >
+
+        <!-- Category filter -->
+        <label for="categoryFilter">Filter by Category:</label>
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="Account">Account</option>
+            <option value="Dashboard">Dashboard</option>
+            <option value="Events">Events</option>
+            <option value="Assignments">Assignments</option>
+            <option value="Support">Support</option>
+            <option value="General">General</option>
+        </select>
+
+        <!-- Search result count -->
+        <p id="faqCount" aria-live="polite">Loading FAQs...</p>
+
+        <!-- FAQs will be displayed here -->
+        <div id="faqContainer"></div>
+
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+
+<script src="../JS/faq.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+[
+    {
+        "title": "AI and Machine Learning Workshop",
+        "category": "Workshop",
+        "description": "Discover artificial intelligence concepts and explore real-world machine learning applications.",
+        "date": "20 November 2026",
+        "venue": "Seminar Hall"
+    },
+    {
+        "title": "Project Exhibition",
+        "category": "Innovation",
+        "description": "Present creative projects, demonstrate your ideas, and learn from other student innovators.",
+        "date": "23 November 2026",
+        "venue": "Innovation Centre"
+    },
+    {
+        "title": "Sports Day",
+        "category": "Sports",
+        "description": "Participate in athletic activities and cheer for your friends in exciting sports competitions.",
+        "date": "25 October 2026",
+        "venue": "College Ground"
+    },
+    {
+        "title": "Badminton Championship",
+        "category": "Sports",
+        "description": "Show your speed, focus, and teamwork in the campus badminton championship.",
+        "date": "28 November 2026",
+        "venue": "Indoor Sports Hall"
+    },
+    {
+        "title": "Cultural Festival",
+        "category": "Cultural",
+        "description": "Celebrate student talent through music, dance, drama, and creative performances.",
+        "date": "5 November 2026",
+        "venue": "College Campus"
+    },
+    {
+        "title": "Dance and Music Night",
+        "category": "Cultural",
+        "description": "Enjoy energetic dance performances, live music, and entertainment by student artists.",
+        "date": "30 November 2026",
+        "venue": "Main Auditorium"
+    },
+    {
+        "title": "Photography Competition",
+        "category": "Creativity",
+        "description": "Capture memorable campus moments and express your creativity through photography.",
+        "date": "2 December 2026",
+        "venue": "College Campus"
+    },
+    {
+        "title": "Career Guidance Seminar",
+        "category": "Career",
+        "description": "Explore career opportunities, industry trends, and useful strategies for professional growth.",
+        "date": "4 December 2026",
+        "venue": "Seminar Hall"
+    },
+    {
+        "title": "Mock Interview Session",
+        "category": "Career",
+        "description": "Practice interview questions and improve your communication and confidence.",
+        "date": "9 December 2026",
+        "venue": "Placement Cell"
+    },
+    {
+        "title": "Green Campus Drive",
+        "category": "Social",
+        "description": "Join fellow students in planting trees and promoting environmental awareness.",
+        "date": "12 December 2026",
+        "venue": "College Campus"
+    },
+    {
+        "title": "Student Club Meetup",
+        "category": "Student Life",
+        "description": "Meet club members, discover new interests, and participate in collaborative activities.",
+        "date": "14 December 2026",
+        "venue": "Student Activity Centre"
+    },
+    {
+        "title": "Startup Idea Challenge",
+        "category": "Innovation",
+        "description": "Share your business ideas, develop creative solutions, and learn about entrepreneurship.",
+        "date": "16 December 2026",
+        "venue": "Conference Room"
+    }
+]

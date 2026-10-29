@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Home</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+    <div id="notificationBanner" class="notification-banner">
+        <span>📢 Welcome to StudentHub! Check out our latest events.</span>
+        <button id="closeNotification" type="button">✕</button>
+    </div>
+
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="logo-link">
+                <img src="../IMAGES/charusat_logo.jpg" alt="StudentHub Logo" class="logo-image">
+                <span class="logo-text">StudentHub</span>
+            </a>
+
+            <button id="menuButton" class="hamburger" type="button" aria-expanded="false" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <ul id="navigationMenu" class="navigation-menu">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="admin.html" >Admin</a></li>
+                <li><a href="faq.html" >FAQ</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+                <li><a href="dashboard.html" >Dashboard</a></li>
+                <li><a href="login.html" >Login</a></li>
+                <li><a href="register.html" >Register</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Welcome to Student Hub</h1>
+            <p>Your one-stop platform for student information, college events and activities.</p>
+            <a href="about.html" class="hero-button">Learn More</a>    
+        </div>
+    </section>
+
+    <section class="slider-section">
+        <h2>StudentHub Highlights</h2>
+
+        <div class="slider">
+            <article class="slide active">
+                <img src="../IMAGES/library.jpg" alt="CSPIT Campus" class="slide-image">
+                <div class="slide-overlay">
+                    <div class="slide-content">
+                        <h3>Student Resources</h3>
+                        <p>Access useful information, student resources and important college updates.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="slide">
+                <img src="../IMAGES/events.jpg" alt="College Main Gate" class="slide-image">
+                <div class="slide-overlay">
+                    <div class="slide-content">
+                        <h3>College Events</h3>
+                        <p>Stay updated with workshops, cultural events and college activities.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="slide">
+                <img src="../IMAGES/student_life.JPG" alt="College Campus" class="slide-image">
+                <div class="slide-overlay">
+                    <div class="slide-content">
+                        <h3>Student Life</h3>
+                        <p>Stay connected with campus activities and opportunities.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="slider-controls">
+            <button id="previousSlide" type="button">❮ Previous</button>
+            <span id="slideNumber">1 / 3</span>
+            <button id="nextSlide" type="button">Next ❯</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>StudentHub Features</h2>
+
+        <article class="feature-card">
+            <div class="feature-icon">🎓</div>
+            <h3>Student Achievement</h3>
+            <p>With their hardwork, they get the result.</p>
+            <a href="achievement.html">Explore</a>
+        </article>
+
+        <article class="feature-card">
+            <div class="feature-icon">🎉</div>
+            <h3>College Events</h3>
+            <p>Stay updated with workshops, cultural events and college activities.</p>
+            <a href="events.html">View Events</a>
+        </article>
+
+        <article class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3>Student Feedback</h3>
+            <p>Share your suggestions and help us improve StudentHub.</p>
+            <a href="feedback.html">Give Feedback</a>
+        </article>
+    </section>
+    </main>
+
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+
+    <script src="../JS/index.js"></script>
+</body>
+</html>

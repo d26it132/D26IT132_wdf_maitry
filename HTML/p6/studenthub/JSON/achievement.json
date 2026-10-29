@@ -1,0 +1,40 @@
+
+{
+    "achievements": [
+        {
+            "id": 1,
+            "studentName": "Aarav Patel",
+            "title": "Coding Competition Winner",
+            "category": "Technical",
+            "year": 2026
+        },
+        {
+            "id": 2,
+            "studentName": "Diya Shah",
+            "title": "Best Project Award",
+            "category": "Academic",
+            "year": 2026
+        },
+        {
+            "id": 3,
+            "studentName": "Rohan Mehta",
+            "title": "Intercollege Cricket Winner",
+            "category": "Sports",
+            "year": 2025
+        },
+        {
+            "id": 4,
+            "studentName": "Ananya Desai",
+            "title": "Hackathon Participant",
+            "category": "Technical",
+            "year": 2026
+        },
+        {
+            "id": 5,
+            "studentName": "Krish Joshi",
+            "title": "Academic Excellence Award",
+            "category": "Academic",
+            "year": 2025
+        }
+    ]
+}

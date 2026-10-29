@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Login</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+
+<body>
+
+<header>
+     <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html" class="logo-link">
+                <img src="../IMAGES/charusat_logo.jpg" alt="StudentHub Logo" class="logo-image">
+                <span class="logo-text">StudentHub</span>
+            </a>
+
+            <button id="menuButton" class="hamburger" type="button" aria-expanded="false" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <ul id="navigationMenu" class="navigation-menu">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="events.html" >Events</a></li>
+                <li><a href="faq.html" >FAQ</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+                <li><a href="login.html" >Login</a></li>
+                <li><a href="register.html" >Register</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+</header>
+
+<p id="loginMessage" role="alert" aria-live="polite"></p>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const message = document.getElementById("loginMessage");
+
+if (params.has("error")) {
+    message.textContent = "Invalid email or password.";
+} else if (params.has("timeout")) {
+    message.textContent =
+        "Your session expired. Please log in again.";
+} else if (params.has("logout")) {
+    message.textContent = "You have logged out successfully.";
+}
+</script>
+
+<main>
+
+<section>
+    <h2>Login</h2>
+
+    <form action="../php/process_login.php" method="POST">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+
+<script src="../JS/login.js"></script>
+
+</body>
+</html>
